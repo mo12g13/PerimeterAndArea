@@ -132,7 +132,7 @@ public class PerimeterAndArea extends JFrame{
         }
         return true;
     }
-    //A method that checks to make sure the user enter the integer that is greater than zero
+    //A method that checks to make sure the user enter an integer that is greater than zero
 private boolean isValidInput(JTextField textField, String name){
     if(Double.parseDouble(textField.getText())>0){
         return true;
@@ -143,7 +143,8 @@ private boolean isValidInput(JTextField textField, String name){
         return false;
     }
 }
-//A method that validates the input from the user the using the isPresent Method and isValidInput() Mehtod
+//A method that validates the inputs entered by the user to make sure the user enters valid input
+
 private boolean isValidData(){
     if(!isPresent(txtLengthInput, "Length"))
     {
